@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Note</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-image: url("https://picsum.photos/1280/800");
+            background-size: cover;
+            box-sizing: border-box;
+            display:flex;
+            justify-content: center;
+
+        }
+        main{
+            width: 1200px;
+        }
+
+        #note {
+            margin-top: 50px;
+            width: 350px;
+            box-sizing: border-box;
+            margin: 10px;
+
+        }
+
+        #note_text {
+            box-sizing: border-box;
+            border: 1px solid rgba(255, 255, 255, 0.5);
+            background-color: rgba(255, 255, 255, 0.746);
+            backdrop-filter: blur(10px);
+            border-radius: 5px;
+            outline: none;
+            width: 350px;
+            height: 200px;
+            padding: 20px;
+            font-size: 16px;
+        }
+
+        #add_btn_div {
+            text-align: right;
+        }
+
+        #note_btn {
+            border: 1px solid crimson;
+            background-color: crimson;
+            width: 80px;
+            height: 30px;
+            color: white;
+            font-size: 16px;
+            border-radius: 3px;
+        }
+
+        #note_list {
+            margin-top: 50px;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .note_item {
+            margin: 10px;
+            width: 350px;
+            box-sizing: border-box;
+        }
+
+        .note {
+
+            box-sizing: border-box;
+            border: 1px solid rgba(255, 255, 255, 0.5);
+            background-color: rgba(245, 231, 108, 0.8);
+            backdrop-filter: blur(10px);
+
+            border-radius: 5px;
+            outline: none;
+            width: 350px;
+            height: 200px;
+            padding: 20px;
+            font-size: 16px;
+        }
+
+        .del_btn {
+            border: none;
+            width: 20px;
+            height: 20px;
+            background-image: url(cross.svg);
+            background-color: rgba(0, 0, 0, 0);
+            background-size: cover;
+            padding: 5px;
+            margin: 5px;
+            box-sizing: border-box;
+            outline: none;
+
+        }
+
+        .del_btn_div {
+            text-align: right;
+        }
+    </style>
+    <script src="begin.js"></script>
+    <script src="end.js" async></script>
+</head>
+
+<body>
+    <main>
+        <div id="note">
+            <div>
+                <textarea id="note_text"></textarea>
+            </div>
+            <div id="add_btn_div">
+                <button id="note_btn">Add</button>
+            </div>
+        </div>
+        <div id="note_list">
+            
+        </div>
+    </main>
+
+</body>
+
+</html>
